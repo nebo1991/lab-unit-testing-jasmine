@@ -21,5 +21,11 @@ describe("Iteration 3", () => {
       expect(calculateArea()).toBeUndefined();
       expect(calculateArea(undefined, 1)).toBeUndefined();
     });
+
+    it("should return undefined if any of the arguments is not a number", () => {
+      expect(calculateArea(1, "2")).toEqual(undefined);
+      expect(calculateArea("3", 4)).toEqual(undefined);
+      expect(calculateArea("100", "47")).toEqual(undefined);
+    });
   });
 });
