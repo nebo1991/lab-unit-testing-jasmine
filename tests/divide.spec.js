@@ -22,5 +22,11 @@ describe("Iteration 2", () => {
       expect(divide()).toBeUndefined();
       expect(divide(undefined, 1)).toBeUndefined();
     });
+
+    it("should return undefined if any of the arguments is not a number", () => {
+      expect(divide(1, "2")).toEqual(undefined);
+      expect(divide("3", 4)).toEqual(undefined);
+      expect(divide("100", "47")).toEqual(undefined);
+    });
   });
 });
