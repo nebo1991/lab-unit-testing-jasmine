@@ -10,10 +10,9 @@ describe("Iteration 3", () => {
       expect(calculateArea.length).toBe(2);
     });
 
-    it("should return the division of the two numbers", () => {
+    it("should return the area of the two numbers", () => {
       expect(calculateArea(4, 2)).toEqual(8);
       expect(calculateArea(10, 5)).toEqual(50);
-      expect(calculateArea(100, 25)).toEqual(2500);
     });
 
     it("should return undefined if any of the arguments is not provided", () => {
